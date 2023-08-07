@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <title>FairTank - The Complete Kitchen Solution</title>
+</head>
+
+<body onscroll="scrolled()">
+    <div class="sidebar" id="sideBar">
+        <div class="sidenav_links">
+            <ul class="sidenav_links_ul">
+                <li class="sidenav_item"><a onclick="toggleFunction('#sideBar')" href="#hero_section">Home</a></li>
+                <li class="sidenav_item"><a onclick="toggleFunction('#sideBar')" href="#prod_section">Product</a></li>
+                <li class="sidenav_item"><a onclick="toggleFunction('#sideBar')" href="#about_section">About Us</a>
+                </li>
+                <li class="sidenav_btn"><button
+                        onclick="window.location.href='#contact_section'; toggleFunction('#sideBar')"
+                        class="contact_btn">Contact
+                        Us</button></li>
+            </ul>
+        </div>
+    </div>
+    <nav class="nav_bar" id="navbar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="logo col-6 col-lg-3">
+                    <img src="assets/images/logo.png" alt="">
+                </div>
+                <div class="sidebar_toggle d-lg-none d-flex col-6">
+                    <div class="toggle_btn" id="toggleBtn">
+                        <a href="#full-section">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav_links d-none d-lg-flex col-lg-9">
+                    <ul class="nav_links_ul">
+                        <li class="nav_item"><a href="#hero_section">Home</a></li>
+                        <li class="nav_item"><a href="#prod_section">Product</a></li>
+                        <li class="nav_item"><a href="#about_section">About Us</a></li>
+                        <li class="nav_btn"><button onclick="window.location.href='#contact_section';"
+                                class="contact_btn">Contact Us</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="siteWrapper" id="full-section">
+        <header class="hero_section row" id="hero_section">
+            <div class="hero_content col-lg-6 col-12" data-aos="fade-down" data-aos-duration="1000">
+                <h1>No More Stressing<br> Over Carbon Cleanup.</h1>
+                <p>Trust Our Solution Delivers Kitchen Relief.</p>
+                <button onclick="window.location.href='#how_section';">Find How<i
+                        class="fa-solid fa-arrow-right fa-xs"></i></button>
+            </div>
+            <div class="hero_img col-lg-6 d-none d-lg-flex" data-aos="fade-down" data-aos-duration="1000">
+                <img src="assets/images/hero_img.webp" alt="">
+            </div>
+        </header>
+        <section class="how" id="how_section">
+            <h1><span class="underlined">How<span class="sp_dot">.</span></span></h1>
+            <div class="container">
+                <div class="process mt-5">
+                    <div class="step" data-aos="fade-left" data-aos-duration="1000">
+                        <img class="numb" src="assets/images/num1.svg" alt="">
+                        <div class="icon_div d-flex justify-content-center">
+                            <div class="icon">
+                                <img src="assets/images/chemical.svg" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="mt-3">Dissolve Chemical</h5>
+                            <p>The necessary quantity of <span class="product_ref">Chemical</span> is dissolved into the
+                                Decarbonising Soak tank's 80%
+                                full
+                                of water.</p>
+                        </div>
+                    </div>
+                    <div class="step" data-aos="fade-right" data-aos-duration="1000">
+                        <img class="numb" src="assets/images/num2.svg" alt="">
+                        <div class="icon_div d-flex justify-content-center">
+                            <div class="icon">
+                                <img src="assets/images/thermo.svg" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="mt-3">Preparation</h5>
+                            <p>The equipment must be loaded, and the <span class="product_ref">Decarbonising Soak
+                                    tank</span> must achieve its ideal
+                                temperature of 80°C - 90°C before the carbon build-up may start to degrade layer by
+                                layer.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="product_section" id="prod_section">
+            <div class="container">
+                <div class="product row">
+                    <div class="content col-lg-8 col-12" data-aos="fade-right" data-aos-duration="1000">
+                        <h1>Introducing the Decarbonising Soak Tank - Your <span class="highlight">Ultimate
+                                Kitchen</span> Cleanup Solution!</h1>
+                        <p>
+                            Are you tired of struggling to remove stubborn carbon buildup from your kitchen utensils and
+                            equipment? Say goodbye to those stressful cleanup days! With our revolutionary Decarbonising
+                            Soak Tank, you can now enjoy hassle-free and efficient carbon removal, elevating your
+                            kitchen
+                            hygiene standards to a whole new level.
+                        </p>
+                        <h5>Key Features</h5>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Thermostatic Control</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Double-Skinned Stainless
+                                Steel Construction</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Drainage Valve</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Loading Basket and Hook</li>
+                        </ul>
+                    </div>
+                    <div class="prod_img col-lg-4 col-12" data-aos="fade-left" data-aos-duration="1000">
+                        <img src="assets/images/soak_tank.jpg" alt="">
+                    </div>
+                </div>
+                <div class="product row">
+                    <div class="content col-lg-6 col-12" data-aos="fade-left" data-aos-duration="1000">
+                        <h1>Take a Look at Our <span class="highlight">Carbon Removing Powder</span> - The Perfect
+                            Finishing Touch!
+                        </h1>
+                        <p>
+                            When it comes to achieving a spotless kitchen and maintaining the highest hygiene standards,
+                            our Carbon Removing Powder is your ultimate secret weapon. Specially formulated to work in
+                            perfect harmony with our Decarbonising Soak Tank, this powerful powder takes carbon removal
+                            to the next level, leaving your kitchen equipment looking brand new.
+                        </p>
+                        <h5>Key Features</h5>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Unmatched Effectiveness</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Environmentally Friendly
+                            </li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Approved by Safety Standards
+                            </li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Versatility in Application
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="prod_img col-lg-4 col-12" data-aos="fade-right" data-aos-duration="1000">
+                        <img src="assets/images/chemical_mockup.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="adv_section" id="adv_section">
+            <div class="container">
+                <div class="row">
+                    <div class="adv_content col-lg-8 col-12" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="row">
+                            <div class="adv col-md-6" data-aos="fade" data-aos-duration="1000">
+                                <h3><img src="assets/images/efficient.svg" alt=""> Free Manpower</h3>
+                                <p>Our user-friendly cleaning system reduces the need for additional manpower. Save on
+                                    labor costs and let our efficient cleaning solution do the heavy lifting, allowing
+                                    your staff to focus on other essential tasks</p>
+                            </div>
+                            <div class="adv col-md-6" data-aos="fade" data-aos-duration="1100">
+                                <h3><img src="assets/images/shield.svg" alt=""> Safe & Non-Toxic</h3>
+                                <p>Rest easy knowing our Carbon Removing Powder features a safe and non-toxic formula.
+                                    It poses
+                                    no health risks to your kitchen staff and customers, making it an eco-friendly and
+                                    responsible choice for maintaining kitchen hygiene</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="adv col-md-6" data-aos="fade" data-aos-duration="1200">
+                                <h3><img src="assets/images/verified.svg" alt=""> Industry Approved</h3>
+                                <p>Our carbon removing powder has received approval from all municipalities in the UAE,
+                                    meeting
+                                    the highest safety and environmental regulations. You can trust in its effectiveness
+                                    and
+                                    compliance for a cleaner kitchen environment.</p>
+                            </div>
+                            <div class="adv col-md-6" data-aos="fade" data-aos-duration="1300">
+                                <h3><img src="assets/images/leaf.svg" alt=""> Sustainable Cleaning</h3>
+                                <p>By using our non-toxic Carbon Removing Powder and the energy-efficient Decarbonising
+                                    Soak
+                                    Tank, you're making a sustainable choice for your kitchen. Reduce your carbon
+                                    footprint
+                                    while achieving superior cleaning results.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="adv_img d-none d-lg-flex col-lg-4" data-aos="fade-left" data-aos-duration="1000">
+                        <img src="assets/images/sustainable.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hyg_section" id="hyg_section">
+            <div class="container">
+                <div class="row">
+                    <div class="hygiene_img col-lg-4 col-12" data-aos="fade-right" data-aos-duration="1000">
+                        <img src="assets/images/hygeine.png" alt="">
+                    </div>
+                    <div class="hygiene_content col-lg-8 col-12" data-aos="fade-left" data-aos-duration="1000">
+                        <div>
+                            <h1>Elevate Hygiene with Fair Tank<span class="sp_dot">.</span></h1>
+                            <p>Elevate your kitchen's hygiene with Fair Tank, our <span class="fw-bold">advanced
+                                    sterilization system </span>. Its
+                                thermostatically controlled double-skinned stainless steel tank eliminates harmful
+                                bacteria
+                                and
+                                microorganisms, ensuring the utmost cleanliness and safety. Paired with our powerful
+                                <span class="fw-bold">non-toxic</span>
+                                Carbon Removing Powder, it revolutionizes kitchen hygiene while being <span
+                                    class="fw-bold">environmentally
+                                    friendly.</span>
+                                Experience a safer, greener, and healthier kitchen with Fair Tank, taking cleanliness to
+                                a
+                                whole
+                                new
+                                level.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about_section" id="about_section">
+            <div class="row">
+                <div class="about_img col-md-6 col-12">
+
+                </div>
+                <div class="about_content col-md-6 col-12" data-aos="fade" data-aos-duration="1000">
+                    <p>Our advanced Sterilization process starts with the Decarbonising Soak tank, where our
+                        non-toxic
+                        Carbon Removing Powder dissolves into water. The tank's thermostatically controlled
+                        double-skinned stainless steel construction ensures the ideal temperature for carbon
+                        degradation. Layer by layer, the chemical works its magic, leaving your utensils spotless
+                        and
+                        bacteria-free.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="about_content col-md-6 col-12" data-aos="fade" data-aos-duration="1000">
+                    <p>At Fair Tank, we understand the challenges every kitchen faces when dealing with stubborn
+                        carbon
+                        buildup on cooking and baking equipment. The unsightly residue not only affects the
+                        efficiency
+                        of
+                        your kitchen operations but also poses hygiene concerns. Our mission is to provide a
+                        sustainable
+                        and
+                        effective solution that elevates kitchen hygiene to new heights.</p>
+                </div>
+                <div class="about_img col-md-6 col-12">
+
+                </div>
+            </div>
+
+        </section>
+        <section class="contact_section" id="contact_section">
+            <div class="contact_card" data-aos="fade-up" data-aos-duration="1000">
+                <div class="row">
+                    <div class="content col-md-6 col-12 mt-5 mt-md-0">
+                        <h1>Connect With Us</h1>
+                        <ul class="fa-ul">
+                            <li><a href=""><span class="fa-li"><i class="fa-regular fa-address-book"></i></span>AL
+                                    QUSAIS INT AREA 2 , DUBAI , UAE</a></li>
+                            <li><a href="tel:+971555866497"><span class="fa-li"><i
+                                            class="fa-solid fa-phone"></i></span>+971507956966</a>
+                            </li>
+                            <li><a href=""><span class="fa-li"><i
+                                            class="fa-brands fa-whatsapp"></i></span>+971555866497</a>
+                            </li>
+                            <li><a href="mailto:info@thefairtank.com"><span class="fa-li"><i
+                                            class="fa-solid fa-envelope"></i></span>info@thefairtank.com</a></li>
+                        </ul>
+                        <button onclick="window.location.href='tel:+971555866497';"><i class="fa-solid fa-phone"></i>
+                            Call Us</button>
+                    </div>
+                    <div class="map col-md-6 col-12">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3607.666526614718!2d55.39241500000001!3d25.281800999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjXCsDE2JzU0LjUiTiA1NcKwMjMnMzIuNyJF!5e0!3m2!1sen!2sin!4v1691431119160!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="logo col-md-6 col-12">
+                        <img src="assets/images/logo.png" alt="">
+                    </div>
+                    <div class="footer_content col-md-6 col-12">
+                        <div>
+                            <div class="social_links col-12">
+                                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            </div>
+                            <p class="col-12">Copyright &#169; FairTank 2023 All Rights Reserved</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <script>
+        //AOS.init();
+    </script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
