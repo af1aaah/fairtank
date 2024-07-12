@@ -1,5 +1,5 @@
-$('#safari').click(function () { toggleFunction('#safari'); return false; });
-$('#wildCam').click(function () { toggleFunction('#wildCam'); return false; });
+// $('#safari').click(function () { toggleFunction('#safari'); return false; });
+// $('#wildCam').click(function () { toggleFunction('#wildCam'); return false; });
 $('#toggleBtn').click(function () { toggleFunction('#sideBar'); return false; });
 // scrollFunction('#full-section');
 
